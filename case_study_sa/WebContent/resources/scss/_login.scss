@@ -1,0 +1,51 @@
+
+.full-body-capsule {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./../media/img/pexels-pixabay-210158.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-capsule {
+
+        width: 30%;
+        min-width: 300px;
+
+        form {
+            height: 450px;
+            background-color: rgba($color: #fcfcfc, $alpha: 0.8);
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            input {
+                height: 30px;
+                width: 75%;
+                margin: 15px 0px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .sign-up-link {
+                color: #081C63;
+            }
+
+            .forgot-password-link {
+                color: #DB2020;
+            }
+
+        }
+
+    }
+
+    
+}

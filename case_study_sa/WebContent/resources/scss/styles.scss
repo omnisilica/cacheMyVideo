@@ -1,0 +1,358 @@
+
+$blueColor: #081C63;
+$mainWhiteColor: #fcfcfc;
+$brandBlue: #0F8BE9;
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.full-body-capsule {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./../media/img/pexels-pixabay-210158.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-capsule {
+
+    width: 30%;
+    min-width: 300px;
+    height: 450px;
+    background-color: rgba($color: $mainWhiteColor, $alpha: 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    form {
+        
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: center;
+        width: 75%;
+
+        input {
+            height: 30px;
+            width: 100%;
+            margin: 12px 0px;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .sign-up-link {
+        color: $blueColor;
+    }
+
+    .forgot-password-link {
+        color: #DB2020;
+    }
+    
+    .policies {
+        margin: 0px 42px 0px 42px;
+
+        p { 
+            text-align: center;
+        }
+    }
+
+    .login-in-link a {
+        text-decoration: none;
+        color: $blueColor;
+    }
+
+}
+
+.welcome-section {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+    background-image: url(./../media/img/pexels-tanathip-rattanatum-2026324.jpg);
+    background-size: cover;
+
+    nav a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: black;
+    }
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+
+    .inner-content{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        img {
+            width: 30em;
+            height: auto;
+            object-fit: cover;
+        }
+
+        p {
+            margin: 0px 15px 0px 15px;
+        }
+    }
+
+    
+}
+
+.download-section,
+.videolist-section {
+    nav a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: black;
+    }
+}
+
+.downloads-body {
+    background-color: #fafae3;
+}
+
+.displayed-downloads-capsule,
+.displayed-videolists-capsule,
+.displayed-home-videos-capsule,
+.displayed-videos-from-videolist-capsule {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    /*flex-flow: row wrap;*/
+    justify-content: center;
+}
+
+.displayed-downloads,
+.displayed-videolists,
+.displayed-videos-from-videolist {
+    width: 85%;
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: center;*/ 
+}
+
+.displayed-home-videos {
+    width: 85%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.single-download,
+.single-videolist,
+.single-video-from-videolist {
+
+    width: 200px;
+    margin: 10px;
+    background-color: #fafafa;
+    border-radius: 10px;
+
+    .download-image-capsule,
+    .videolist-image-capsule,
+    .video-image-from-videolist-capsule {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    img,
+    video {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    div h6{
+        font-size: 1rem;
+        margin: 0px;
+    }
+
+}
+
+.single-home-video {
+    width: 60%;
+    background-color: #fafafa;
+}
+
+.home-video-image-capsule {
+    img,
+    video {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.download-information,
+.videolist-information,
+.video-from-videolist-information {
+    min-height: 100px;
+}
+
+.home-video-information {
+    min-height: 300px;
+}
+
+.new-download-section,
+.new-videolist-section {
+    background-color: #f5f5f5;
+    background-image: none;
+
+    .download-form,
+    .videolist-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+    }
+
+}
+
+.watch-video-page-capsule {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #fcfcfc;
+
+    .header-nav {
+        width: 5%;
+        //background-color: red;
+        position: fixed;
+        height: 100vh;
+
+        nav {
+            margin: 30vh 0% 0% 0%;
+        }
+
+        .active-link {
+            color: #0F8BE9;
+        }
+        
+
+        a {
+            text-decoration: none;
+            color: #707070;
+            margin: 12px 0px 12px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            i {
+                font-size: 1.5rem;
+            }
+            p {
+                margin: 0px 0px 0px 0px;
+                font-size: .8rem;
+            }
+        }
+
+        
+
+        
+    }
+
+    .section-content {
+        margin: 0% 0% 0% 5%;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.video-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: green;
+}
+
+.watch-video-capsule {
+
+    width: 80%;
+
+    video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.video-information {
+    //background-color: hotpink;
+    margin-top: 30px;
+    //border: 1px solid black;
+    background-color: #f5f2f2;
+    width: 80%;
+
+    h3 {
+        margin:15px 0px 0px 15px;
+    }
+
+    p {
+        margin: 0px 15px 0px 15px;
+    }
+}
+
+.video-description {
+    font-weight: bold;
+}
+
+.other-site-videos {
+    div {
+        //background-color: grey;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        margin: 12px 0px 0px 0px;
+
+        .site-video {
+            width: 60%;
+
+                video {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+        }
+
+        
+
+
+        .site-video-information {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px 0px 0px;
+            align-items: flex-start;
+            h6 {
+                font-size: 1rem;
+                margin: 3px 0px 0px 0px;
+                //background-color: hotpink;
+                padding-left: 6px;
+                
+            }
+        }
+
+        
+    }
+}

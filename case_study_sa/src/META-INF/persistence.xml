@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="case_study_sa">
+	
+		<!-- classes -->
+		<class>com.case_study_sa.entities.SiteUser</class>
+		<class>com.case_study_sa.entities.Download</class>
+		<class>com.case_study_sa.entities.Video</class>
+		<class>com.case_study_sa.entities.Videolist</class>
+		
+		<!-- properties -->
+		<properties>
+			<!-- DB connection configuration (connection string) -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/mywebapp?useSSL=false"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="pass_03"/>
+	
+			<property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver" />  
+		
+			<!-- EclipseLink configuration -->
+			<property name="eclipselink.target-database" value="MySQL" />
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+			<property name="eclipselink.logging.level" value="OFF" />
+		</properties>
+	
+	</persistence-unit>
+</persistence>

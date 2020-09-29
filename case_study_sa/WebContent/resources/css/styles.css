@@ -1,0 +1,336 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.full-body-capsule {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./../media/img/pexels-pixabay-210158.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-capsule {
+  width: 30%;
+  min-width: 300px;
+  height: 450px;
+  background-color: rgba(252, 252, 252, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-capsule h1 {
+  font-size: 2.2rem;
+}
+
+.form-capsule form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.form-capsule form input {
+  height: 30px;
+  width: 100%;
+  margin: 12px 0px;
+}
+
+.form-capsule a {
+  text-decoration: none;
+}
+
+.form-capsule .sign-up-link {
+  color: #081C63;
+}
+
+.form-capsule .forgot-password-link {
+  color: #DB2020;
+}
+
+.form-capsule .policies {
+  margin: 0px 42px 0px 42px;
+}
+
+.form-capsule .policies p {
+  text-align: center;
+}
+
+.form-capsule .login-in-link a {
+  text-decoration: none;
+  color: #081C63;
+}
+
+.welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+  background-image: url(./../media/img/pexels-tanathip-rattanatum-2026324.jpg);
+  background-size: cover;
+}
+
+.welcome-section nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.content .inner-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.content .inner-content img {
+  width: 30em;
+  height: auto;
+  object-fit: cover;
+}
+
+.content .inner-content p {
+  margin: 0px 15px 0px 15px;
+}
+
+.download-section nav a,
+.videolist-section nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.downloads-body {
+  background-color: #fafae3;
+}
+
+.displayed-downloads-capsule,
+.displayed-videolists-capsule,
+.displayed-home-videos-capsule,
+.displayed-videos-from-videolist-capsule {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  /*flex-flow: row wrap;*/
+  justify-content: center;
+}
+
+.displayed-downloads,
+.displayed-videolists,
+.displayed-videos-from-videolist {
+  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  /*justify-content: center;*/
+}
+
+.displayed-home-videos {
+  width: 85%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.single-download,
+.single-videolist,
+.single-video-from-videolist {
+  width: 200px;
+  margin: 10px;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+.single-download .download-image-capsule,
+.single-download .videolist-image-capsule,
+.single-download .video-image-from-videolist-capsule,
+.single-videolist .download-image-capsule,
+.single-videolist .videolist-image-capsule,
+.single-videolist .video-image-from-videolist-capsule,
+.single-video-from-videolist .download-image-capsule,
+.single-video-from-videolist .videolist-image-capsule,
+.single-video-from-videolist .video-image-from-videolist-capsule {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.single-download img,
+.single-download video,
+.single-videolist img,
+.single-videolist video,
+.single-video-from-videolist img,
+.single-video-from-videolist video {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.single-download div h6,
+.single-videolist div h6,
+.single-video-from-videolist div h6 {
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.single-home-video {
+  width: 60%;
+  background-color: #fafafa;
+}
+
+.home-video-image-capsule img,
+.home-video-image-capsule video {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.download-information,
+.videolist-information,
+.video-from-videolist-information {
+  min-height: 100px;
+}
+
+.home-video-information {
+  min-height: 300px;
+}
+
+.new-download-section,
+.new-videolist-section {
+  background-color: #f5f5f5;
+  background-image: none;
+}
+
+.new-download-section .download-form,
+.new-download-section .videolist-form,
+.new-videolist-section .download-form,
+.new-videolist-section .videolist-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.watch-video-page-capsule {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #fcfcfc;
+}
+
+.watch-video-page-capsule .header-nav {
+  width: 5%;
+  position: fixed;
+  height: 100vh;
+}
+
+.watch-video-page-capsule .header-nav nav {
+  margin: 30vh 0% 0% 0%;
+}
+
+.watch-video-page-capsule .header-nav .active-link {
+  color: #0F8BE9;
+}
+
+.watch-video-page-capsule .header-nav a {
+  text-decoration: none;
+  color: #707070;
+  margin: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.watch-video-page-capsule .header-nav a i {
+  font-size: 1.5rem;
+}
+
+.watch-video-page-capsule .header-nav a p {
+  margin: 0px 0px 0px 0px;
+  font-size: .8rem;
+}
+
+.watch-video-page-capsule .section-content {
+  margin: 0% 0% 0% 5%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+
+.video-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.watch-video-capsule {
+  width: 80%;
+}
+
+.watch-video-capsule video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.video-information {
+  margin-top: 30px;
+  background-color: #f5f2f2;
+  width: 80%;
+}
+
+.video-information h3 {
+  margin: 15px 0px 0px 15px;
+}
+
+.video-information p {
+  margin: 0px 15px 0px 15px;
+}
+
+.video-description {
+  font-weight: bold;
+}
+
+.other-site-videos div {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 12px 0px 0px 0px;
+}
+
+.other-site-videos div .site-video {
+  width: 60%;
+}
+
+.other-site-videos div .site-video video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.other-site-videos div .site-video-information {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 0px;
+  align-items: flex-start;
+}
+
+.other-site-videos div .site-video-information h6 {
+  font-size: 1rem;
+  margin: 3px 0px 0px 0px;
+  padding-left: 6px;
+}
+/*# sourceMappingURL=styles.css.map */
